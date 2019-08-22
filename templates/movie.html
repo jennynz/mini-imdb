@@ -2,25 +2,26 @@
 {% extends 'layout.html' %}
 {% block content %}
 
-<div class="movie-year">
-    <strong>Year</strong><br>
+<div class="padding-bottom">
+    <h3>Year</h3>
     {{ movie.year }}
 </div>
 
-<div class="movie-description">
-    <strong>Description</strong><br>
+<div class="padding-bottom">
+    <h3>Description</h3>
     {{ movie.description }}
 </div>
 
-<div class="movie-cast">
-    <strong>Cast</strong>
+<div class="padding-bottom">
+    <h3>Cast</h3>
+    <!-- Should add a thing in here that flags if no roles in DB -->
     <div class="movie-cast-table">
-        <!-- {% for person in movie.actors %}
+        {% for person in movie.actors %}
             <div class="row">
-                <div class="column">{{ person.actor }}</div>
-                <div class="column">{{ person.role }}</div>
+                <div class="column actor">{{ person.actor }}</div>
+                <div class="column role">{{ person.role }}</div>
             </div>
-        {% endfor %} -->
+        {% endfor %}
     </div>
 </div>
 

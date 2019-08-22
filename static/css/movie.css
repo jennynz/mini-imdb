@@ -1,7 +1,23 @@
-.movie-year {
-    padding-bottom: 0.6em;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.movie-description {
-    padding-bottom: 0.6em;
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.column:last-of-type {
+    padding-right: 0;
+}
+
+.role {
+    color: #999;
 }
