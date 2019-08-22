@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/movie.css') }}">
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="movie-year">
+    <strong>Year</strong><br>
+    {{ movie.year }}
+</div>
+
+<div class="movie-description">
+    <strong>Description</strong><br>
+    {{ movie.description }}
+</div>
+
+<div class="movie-cast">
+    <strong>Cast</strong>
+    <div class="movie-cast-table">
+        <!-- {% for person in movie.actors %}
+            <div class="row">
+                <div class="column">{{ person.actor }}</div>
+                <div class="column">{{ person.role }}</div>
+            </div>
+        {% endfor %} -->
+    </div>
+</div>
+
+{% endblock %}

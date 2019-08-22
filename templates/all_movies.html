@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/all_movies.css') }}">
+{% extends 'layout.html' %}
+{% block content %}
+
+{% for movie in movies %}
+    <p>
+        {{ loop.index }}.&nbsp;
+        <a href="/movie/{{ movie.id }}">
+             {{ movie.title }}
+        </a>
+    </p>
+{% endfor %}
+
+{% endblock %}
