@@ -1,5 +1,8 @@
-<form method="POST" action="/choose_movie", name="Select_Movie">
-    {{ form.csrf_token }}
-    {{ form.movies }}
-    <input type="submit" value="Go">
-</form>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/movies_dropdown.css') }}">
+<div class="movies-dropdown">
+    <form method="POST" action="/choose_movie", name="Select_Movie">
+        {{ form.csrf_token }}
+        {{ form.movies }}
+        <input type="submit" value="Go">
+    </form>
+</div>

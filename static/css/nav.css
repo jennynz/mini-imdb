@@ -3,13 +3,9 @@ nav a {
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     text-decoration: none;
-    padding-right: 1rem
+    padding-right: 1rem;
 }
 
 nav a:hover {
     color: #f5428d;
-}
-
-nav a:last-of-type {
-    padding-right: 0;
 }
