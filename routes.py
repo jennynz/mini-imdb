@@ -45,6 +45,7 @@ def choose_movie():
             return redirect(url_for('movie', id=selected_movie_id))
         else:
             abort(404)
+    # Not sure when this is actually triggered
     return render_template('choose_movie.html', title='Choose a movie', form=form)
 
 @app.errorhandler(404)
