@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<p>Select from the dropdown</p>
+<form method="POST" action="/choose_movie", name="Select_Movie">
+    {{ form.csrf_token }}
+    {{ form.movies }}
+    <input type="submit" value="Go">
+</form>
+{% endblock %}
